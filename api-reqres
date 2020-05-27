@@ -1,0 +1,18 @@
+//fetch('https://reqres.in/api/users').then(res => console.log(res));
+
+fetch('https://reqres.in/api/users')
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(error => console.log('Error'));
+
+
+/*fetch('https://reqres.in/api/users')
+  .then(res => {
+        if(res.ok){
+          console.log('sucsess');
+        }else{
+          console.log('not sucsess');
+        }
+  })
+  .then(data => console.log(data))
+  .catch(error => console.log('Error'));*/
